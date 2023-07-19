@@ -25,6 +25,9 @@ FROM gcr.io/distroless/base-debian11:nonroot as production
 COPY --from=build /app/main /
 
 
+# Application port (optional)
+EXPOSE 1234
+
 
 
 
