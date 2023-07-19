@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: apitesting
+  labels:
+    app: apitesting
+  name: apitesting
+spec:
+  ports:
+  
+    - protocol: TCP
+      port: 1234
+      targetPort: 1234
+   
+   
+  selector:
+    app: apitesting
+  type: ClusterIP

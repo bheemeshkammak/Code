@@ -29,8 +29,15 @@
   },
   "forwardPorts": [
     
+        1234
+    
   ],
   "portsAttributes": {
+    
+        "1234": {
+          "label": "Hello Remote World",
+          "onAutoForward": "notify"
+        }
     
   }
 }
