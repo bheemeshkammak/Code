@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: apitesting
+  name: apitesting
+  labels:
+    app: apitesting
+spec:
+  selector:
+    matchLabels:
+      app: apitesting
+  template:
+    metadata:
+      labels:
+        app: apitesting
+        name: apitesting
+    spec:
+      containers:
+        - name: apitesting
+          image: bheemeshkammak/Code/apitesting
+          imagePullPolicy: Always
+        
+          ports:
+        
+        
+        
